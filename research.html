@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guilherme de Aquino</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<header class="topbar">
+  <nav class="nav container">
+    <a class="brand" href="index.html">
+      <span class="logo-dot"></span>
+      <span class="brand-text">
+        <strong>Guilherme</strong><br />
+        <small>de Aquino</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <div class="links">
+      <a href="index.html" class="link">HOME</a>
+      <a href="index.html#about" class="link">ABOUT</a>
+      <a href="research.html" class="link">RESEARCH</a>
+      <a href="publications.html" class="link">PUBLICATIONS</a>
+    </div>
+
+    <a class="contact" href="contact.html">CONTACT</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero hero-research">
+  <div class="hero-inner container">
+    <div class="hero-text hero-research-box">
+      <h1>Research</h1>
+      <p>
+         This page presents selected research projects involving both computational and experimental approaches 
+         to fluid dynamics and complex flow phenomena, ranging from fundamental studies of flow behavior to applied
+          research focused on improving industrial processes.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     Project 1
+     ===================================================== -->
+<section class="about project" id="project1">
+  <div class="about-inner container project-card">
+
+    <figure class="project-media">
+      <img src="figures/project_VR.jpg"
+           alt="Particle–vortex interaction visualisation"
+           loading="lazy" />
+    </figure>
+
+    <div class="project-body">
+            <h2>Interaction of a vortical structure and particles</h2>
+
+      <p>
+        This project investigates how inertial particles are transported by a coherent vortex ring
+        using a combined experimental–numerical approach. The vortex ring serves as a canonical flow
+        to isolate the physical mechanisms governing the interaction between vortices and particles,
+        relevant to geophysical and industrial applications.
+      </p>
+
+      <p>
+        The study spans two complementary perspectives: the interaction between a single particle
+        and a single vortex, leading to the identification of distinct interaction regimes
+        (<em>simple deviation</em>, <em>strong deviation</em>, and <em>capture</em>), and the extension
+        to collective transport and dispersion of multiple particles in particle-laden flows.
+      </p>
+
+      <p>
+        <strong>Methods:</strong> time-resolved PIV, shadowgraphy, and 3D particle tracking combined
+        with direct numerical simulations implemented in <em>Basilisk</em>.
+      </p>
+
+      <p>
+        <strong>Outcomes:</strong> The identification of fundamental mechanisms governing the interaction of a single inertial particle and a vortex ring and
+        the development of a particle–vortex interaction solver implemented in <em>Basilisk</em>.
+      </p>
+
+      <p class="project-links">
+      <a href="https://doi.org/10.1017/jfm.2025.10909" target="_blank" rel="noopener noreferrer">
+         <i class="fas fa-file-alt"></i> Paper interaction regimes
+         </a>
+         &nbsp;&nbsp;
+         <a href="https://basilisk.fr/sandbox/gaquino/README" target="_blank" rel="noopener noreferrer">
+         <i class="fas fa-code"></i> Basilisk solver
+       </a>
+</p>
+
+      <p class="project-note">
+      <small>
+         This work was conducted as part of my PhD research, in collaboration with Dr. Julie Albagnac and Dr. Sylvain Viroulet at (<a href="https://www.imft.fr/" target="_blank" rel="noopener noreferrer">IMFT</a>).
+      </small>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- =====================================================
+     Project 2
+     ===================================================== -->
+<section class="about project" id="project2">
+  <div class="about-inner container project-card">
+
+    <figure class="project-media">
+      <img src="figures/project_ufm.png"
+           alt="CFD simulation of disturbed pipe flow for ultrasonic metering"
+           loading="lazy" />
+    </figure>
+
+    <div class="project-body">
+    <h2>Improvement of ultrasonic flow meters using computational fluid dynamics</h2>
+
+      <p>
+        Ultrasonic flow meters are widely used in industrial applications due to their non-intrusive
+        operation and broad applicability. Their accuracy, however, depends strongly on the flow
+        conditions at the installation section. In practical systems, upstream fittings such as elbows, valves, and diameter changes often
+        generate disturbed and asymmetric velocity profiles that challenge standard calibration
+        assumptions.
+      </p>
+
+      <p>
+        This project explores computational fluid dynamics as a supporting tool for ultrasonic
+        flow metrology. By numerically resolving disturbed pipe flows and performing virtual
+        ultrasonic measurements along the acoustic path, the project examines how flow physics and
+        numerical modeling choices influence the results of numerical simulations under non-ideal conditions.
+      </p>
+
+      <p>
+        <strong>Methods:</strong> RANS simulations of turbulent pipe flows, virtual ultrasonic-path integration, and statistical analysis, with extensions toward CFD–machine learning approaches.
+      </p>
+
+      <p>
+        <strong>Outcomes:</strong> validated numerical frameworks for disturbed-flow ultrasonic
+        metering and methodological foundations for integrating CFD into industrial
+        flow-measurement practice.
+      </p>
+
+      <p class="project-links project-links-pubs">
+  <a class="pub-link" href="https://doi.org/10.3390/metrology5010011" target="_blank" rel="noopener noreferrer">
+    <i class="fas fa-file-alt" aria-hidden="true"></i> Review article
+  </a>
+  <a class="pub-link" href="https://doi.org/10.1016/j.measurement.2021.110015" target="_blank" rel="noopener noreferrer">
+    <i class="fas fa-file-alt" aria-hidden="true"></i> Sensitivity analysis study
+  </a>
+    <a class="pub-link" href="https://doi.org/10.1007/s40430-024-05365-0" target="_blank" rel="noopener noreferrer">
+    <i class="fas fa-file-alt" aria-hidden="true"></i> RANS for pipe flow
+  </a>
+</p>
+<p class="project-note">
+  <small>
+    This work was conducted in collaboration with Dr. Ramon Martins, Dr. Márcio Martins, and Prof. Rogério Ramos
+    (<a href="https://nemog.ufes.br/" target="_blank" rel="noopener noreferrer">NEMOG</a>).
+  </small>
+</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- =====================================================
+     Project 3
+     ===================================================== -->
+<section class="about project" id="project3">
+  <div class="about-inner container project-card">
+
+    <figure class="project-media">
+      <img src="figures/project_SID.png"
+           alt="Stratified inclined duct with lateral confinement"
+           loading="lazy" />
+    </figure>
+
+    <div class="project-body">
+      <h2>Effect of lateral confinement on stratified flow transitions</h2>
+
+      <p>
+        Numerical investigation of regime transitions in stratified inclined ducts,
+        focusing on how finite channel width modifies laminar base flows, stability,
+        and transition thresholds.
+      </p>
+
+      <p>
+        <strong>Methods:</strong> derivation of a three-dimensional semi-analytical laminar base flow,
+        formulation of a width-averaged reduced model including side-wall friction,
+        two-dimensional numerical simulations with adaptive mesh refinement,
+        high–Schmidt-number interface resolution,
+        stability and transition analysis using physically motivated control parameters.
+      </p>
+
+      <p>
+        <strong>Outcomes:</strong> implemented a width-averaged 2D solver in <em>Basilisk</em> with AMR and embedded boundaries,
+        including a drag-law parametrisation of side-wall friction calibrated from the semi-analytical base flow;
+        validated against analytical solutions and experiments, enabling high-Schmidt simulations (Sc up to ~700) and broad parameter sweeps at a fraction of 3D DNS cost.
+</p>
+    
+      <p style="margin-top: 1rem;">
+        <a class="pub-link" href="publications.html">
+          <i class="fas fa-list"></i> See manuscript status
+        </a>
+      </p>
+
+
+     <p>
+      <small>
+         This work was conducted as part of exchange period during my PhD at Eindhoven University of Technology (TuE, The netherlands) in collaboration with Dr. Matias Duran-Matute and Dr. Adrien Lefauve.
+      </small>
+      </p>
+    </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+<!-- =====================================================
+     Project 4 (side-by-side layout preserved)
+     ===================================================== -->
+<section class="about project" id="project4">
+  <div class="about-inner container">
+
+    <div class="about-text">
+      <h2>Simulation-based analysis of natural ventilation</h2>
+
+      <p>
+        Parametric numerical assessment of window and door designs to improve
+        natural ventilation and thermal comfort in hot–humid climates.
+      </p>
+
+      <p>
+        <strong>Methods:</strong> building energy simulation (EnergyPlus/DesignBuilder),
+        airflow network modeling,
+        full-factorial parametric design,
+        statistical evaluation of ventilation and comfort metrics.
+      </p>
+      <p>
+        <strong>Outcomes:</strong> identification of effective low-cost opening configurations
+        (pivot windows, ventilated sills, half-doors),
+        quantified reductions in thermal discomfort,
+        design guidelines for naturally ventilated classrooms.
+      </p>
+
+      <p style="margin-top: 1rem;">
+        <a class="pub-link" href="https://doi.org/10.1080/17452007.2024.2374766" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-file-alt"></i> Read the published work
+        </a>
+      </p>
+               <p>
+      <small>
+         This work was perfomed in collaboration with Dr. Ramon Martins and Dr. Erica Pagel.
+      </small>
+      </p>
+    </div>
+
+    <figure class="project-media">
+      <img src="figures/project_arche.png"
+           alt="Natural ventilation design configurations"
+           loading="lazy" />
+    </figure>
+
+
+
+  </div>
+</section>
+
+<section class="closing-quote">
+  <div class="quote-line">
+    <span class="quote-greek">τὰ πάντα ῥεῖ</span>
+    <span class="quote-dot">·</span>
+    <span class="quote-english">Everything flows</span>
+  </div>
+</section>
+
+
+
+
+<footer class="site-footer">
+
+  <div class="footer-divider"></div>
+
+  <div class="footer-text">
+    Guilherme Siqueira de Aquino © All rights reserved.
+  </div>
+
+<div class="footer-social-box">
+  <a class="social-link"
+     href="https://www.linkedin.com/in/guilherme-de-aquino"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+  </a>
+
+  <a class="social-link"
+     href="https://scholar.google.com/citations?user=KmjNehQAAAAJ&hl=en"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Google Scholar">
+    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+  </a>
+
+  <a class="social-link"
+     href="mailto:guilherme.siqueiradeaquino@imft.fr"
+     aria-label="Email">
+    <i class="fas fa-envelope" aria-hidden="true"></i>
+  </a>
+</div>
+
+</footer>s
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.querySelector(".menu-toggle");
+    const links = document.querySelector(".links");
+
+    if (!btn || !links) return;
+
+    btn.addEventListener("click", () => {
+      const open = links.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      btn.textContent = open ? "✕" : "☰";
+    });
+  });
+</script>
+
+</body>
+</html>

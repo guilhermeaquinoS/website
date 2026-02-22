@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guilherme de Aquino</title>
+  <link rel="stylesheet" href="style.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+  <style>
+    html { scroll-behavior: smooth; }
+
+    /* Contact form (styled like a simple card form) */
+    .contact-form {
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    .contact-label {
+      display: block;
+      font-weight: 700;
+      margin: 1.25rem 0 0.5rem;
+      font-size: 1.15rem;
+    }
+
+    .contact-input,
+    .contact-textarea {
+      width: 100%;
+      padding: 1rem 1.1rem;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 14px;
+      background: #fff;
+      font-size: 1.05rem;
+      outline: none;
+    }
+
+    .contact-textarea {
+      resize: vertical;
+      min-height: 160px;
+    }
+
+    .contact-input:focus,
+    .contact-textarea:focus {
+      border-color: rgba(0, 0, 0, 0.35);
+      box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.18);
+    }
+
+    .contact-submit {
+      margin-top: 1.5rem;
+      padding: 0.95rem 1.25rem;
+      border: none;
+      border-radius: 999px;
+      font-weight: 700;
+      cursor: pointer;
+      background: #000;
+      color: #fff;
+    }
+
+    .contact-submit:hover {
+      opacity: 0.85;
+    }
+
+    .contact-note {
+      margin-top: 0.9rem;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    .contact-note a {
+      color: inherit;
+      text-decoration: underline;
+    }
+
+    /* Two-column contact layout */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    /* Ensure hero text container spans full width */
+    .hero-contact-box {
+      max-width: 100%;
+    }
+
+    /* Keep form visually aligned */
+    .contact-form-column {
+      margin-top: 0.5rem;
+    }
+
+    /* Responsive: stack on small screens */
+    @media (max-width: 900px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Make the Contact hero use the full hero box width (Home hero is likely 2-column) */
+    .hero.hero-contact .hero-inner {
+      display: block !important; /* prevents the Home hero split layout from reserving half the width */
+    }
+
+    .hero.hero-contact .hero-text.hero-contact-box {
+      width: 100% !important;
+      max-width: 100% !important;
+      flex: none !important;
+    }
+
+    /* Ensure the grid itself can stretch fully */
+    .hero.hero-contact .contact-grid {
+      width: 100%;
+    }
+
+    /* Contact social icons */
+    .contact-social {
+      margin-top: 1.5rem;
+    }
+
+    .contact-social-icons {
+      display: flex;
+      gap: 1.2rem;
+      margin-top: 0.6rem;
+      font-size: 1.4rem;
+    }
+
+    .contact-social-icons a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .contact-social-icons a:hover {
+      opacity: 0.7;
+    }
+
+    /* Make email links black and remove blue underline */
+    .contact-text-column a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .contact-text-column a:hover {
+      text-decoration: underline;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+
+
+<body>
+<header class="topbar">
+  <nav class="nav container">
+    <a class="brand" href="index.html">
+      <span class="logo-dot"></span>
+      <span class="brand-text">
+        <strong>Guilherme</strong><br />
+        <small>de Aquino</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <div class="links">
+      <a href="index.html" class="link">HOME</a>
+      <a href="index.html#about" class="link">ABOUT</a>
+      <a href="research.html" class="link">RESEARCH</a>
+      <a href="publications.html" class="link">PUBLICATIONS</a>
+    </div>
+
+    <a class="contact" href="contact.html">CONTACT</a>
+  </nav>
+</header>
+
+<section class="hero hero-contact">
+  <div class="hero-inner container">
+
+    <div class="hero-text hero-contact-box">
+
+      <div class="contact-grid">
+
+        <div class="contact-text-column">
+          <h1>Contact</h1>
+
+          <p>
+            Currently I am based at the <strong>Institut de Mécanique des Fluides de Toulouse (IMFT)</strong>, in Toulouse, France.
+          </p>
+
+          <p>
+              <strong>Address:</strong><br />
+              <a href="https://www.imft.fr/" target="_blank" rel="noopener noreferrer">
+              Institut de Mécanique des Fluides de Toulouse
+              </a><br />
+              Université de Toulouse, CNRS<br />
+              2 Allée Camille Soula<br />
+              31400 Toulouse<br />
+              France
+          </p>
+
+
+          <hr class="pub-divider" />
+
+          <p>
+            If you would like to discuss research, explore potential collaborations, inquire about job opportunities, or discuss consulting services, please get in touch.<br />
+
+          </p>
+
+          <p>
+          You can use the form or email me at
+          <a href="mailto:guilherme.siqueiradeaquino@imft.fr">guilherme.siqueiradeaquino@imft.fr</a>
+          </p>
+
+           <hr class="pub-divider" />
+
+          <div class="contact-social">
+            <p><strong>Professional profiles</strong></p>
+
+            <div class="contact-social-icons">
+              <a href="https://www.linkedin.com/in/guilherme-de-aquino" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+
+              <a href="https://orcid.org/0000-0002-8654-2737" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+                <i class="fab fa-orcid"></i>
+              </a>
+
+              <a href="https://scholar.google.com/citations?user=KmjNehQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                <i class="fas fa-graduation-cap"></i>
+              </a>
+
+              <a href="https://www.researchgate.net/profile/Guilherme-De-Aquino" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">
+                <i class="fab fa-researchgate"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="contact-form-column">
+          <form class="contact-form" action="https://formspree.io/f/xlgwwgbk" method="POST">
+
+            <input type="hidden" name="_subject" value="New message from contact page" />
+
+            <label class="contact-label" for="contact-name">Name</label>
+            <input
+              class="contact-input"
+              id="contact-name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              autocomplete="name"
+              required
+            />
+
+            <label class="contact-label" for="contact-email">Email</label>
+            <input
+              class="contact-input"
+              id="contact-email"
+              name="email"
+              type="email"
+              placeholder="your@email.com"
+              autocomplete="email"
+              required
+            />
+
+            <label class="contact-label" for="contact-message">Message</label>
+            <textarea
+              class="contact-textarea"
+              id="contact-message"
+              name="message"
+              rows="7"
+              placeholder="Please briefly describe what you would like to discuss"
+              required
+            ></textarea>
+
+            <button class="contact-submit" type="submit">Submit</button>
+
+            <p class="contact-note">
+              Messages are sent securely via Formspree.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="site-footer">
+
+  <div class="footer-divider"></div>
+
+  <div class="footer-text">
+    Guilherme Siqueira de Aquino © All rights reserved.
+  </div>
+
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.querySelector(".menu-toggle");
+    const links = document.querySelector(".links");
+
+    if (!btn || !links) return;
+
+    btn.addEventListener("click", () => {
+      const open = links.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      btn.textContent = open ? "✕" : "☰";
+    });
+  });
+</script>
+
+</body>
+</html>

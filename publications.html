@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications – Guilherme de Aquino</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- Page-specific styles -->
+  <style>
+    .pub-divider {
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      border: none;
+      margin: 1.5rem 0;
+    }
+
+    .pub-section-title {
+      text-align: center;
+      font-size: 1.1rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .pub-list li {
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+
+    /* DOI links: same color, a bit smaller, underlined */
+    .pub-link {
+      color: inherit;
+      font-size: 0.9em;
+      text-decoration: underline;
+      margin-right: 0.75rem;
+    }
+    .pub-link:hover {
+      opacity: 0.7;
+    }
+
+    /* Publications page: force the hero layout to be single-column (Home hero is likely 2-column) */
+    .hero.hero-publications .hero-inner {
+      display: block !important;          /* overrides flex/grid two-column layout */
+      align-items: initial !important;
+    }
+
+    /* If Home uses CSS grid for hero-inner, also force 1 column */
+    .hero.hero-publications .hero-inner {
+      grid-template-columns: 1fr !important;
+    }
+
+    /* Override the Home hero text sizing so the text follows the box size */
+    .hero.hero-publications .hero-text,
+    .hero.hero-publications .hero-publications-box {
+      max-width: 100% !important;
+      width: 100% !important;
+      flex: none !important;
+    }
+
+    /* Keep headings/intro centered, but make the list readable */
+    .hero.hero-publications .hero-publications-box > h1,
+    .hero.hero-publications .hero-publications-box > p,
+    .hero.hero-publications .hero-publications-box > h2 {
+      text-align: center;
+    }
+
+    .hero.hero-publications .pub-list {
+      text-align: left;
+    }
+
+    /* Make intro hyperlinks black instead of blue */
+    .hero.hero-publications .hero-publications-box a {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    .hero.hero-publications .hero-publications-box a:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <nav class="nav container">
+    <a class="brand" href="index.html">
+      <span class="logo-dot"></span>
+      <span class="brand-text">
+        <strong>Guilherme</strong><br />
+        <small>de Aquino</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <div class="links">
+      <a href="index.html" class="link">HOME</a>
+      <a href="index.html#about" class="link">ABOUT</a>
+      <a href="research.html" class="link">RESEARCH</a>
+      <a href="publications.html" class="link">PUBLICATIONS</a>
+    </div>
+
+    <a class="contact" href="contact.html">CONTACT</a>
+  </nav>
+</header>
+
+
+<section class="hero hero-publications">
+  <div class="hero-inner container">
+
+    <div class="hero-text hero-publications-box">
+
+      <h1>Publications</h1>
+
+      <p>
+        Here is a list of my peer-reviewed publications and manuscripts. My academic profiles are available on
+        <a href="https://scholar.google.com/citations?user=KmjNehQAAAAJ&hl=pt-BR" target="_blank" rel="noopener noreferrer">Google Scholar</a>,
+        <a href="https://www.researchgate.net/profile/Guilherme-De-Aquino" target="_blank" rel="noopener noreferrer">ResearchGate</a>,
+        and
+        <a href="https://orcid.org/0000-0002-8028-2328" target="_blank" rel="noopener noreferrer">ORCID</a>.
+      </p>
+
+      <hr class="pub-divider" />
+
+      <h2 class="pub-section-title">Publications in Peer-Reviewed Journals</h2>
+
+      <ol class="pub-list">
+
+        <li>
+          de Aquino, G. S.; Viroulet, S.; Sasso, N.; Albagnac, J.<br />
+          <em>Interaction regimes of a vortex ring and an inertial particle.</em><br />
+          <strong>Journal of Fluid Mechanics</strong>, 2025.<br />
+          <a class="pub-link" href="https://doi.org/10.1017/jfm.2025.10909" target="_blank" rel="noopener noreferrer">DOI</a>
+        </li>
+
+        <li>
+          de Aquino, G. S.; Martins, R. S.; Martins, M. F.; Ramos, R.<br />
+          <em>An Overview of Computational Fluid Dynamics as a Tool to Support Ultrasonic Flow Measurements.</em><br />
+          <strong>Metrology</strong>, 2025.<br />
+          <a class="pub-link" href="https://doi.org/10.3390/metrology5010011" target="_blank" rel="noopener noreferrer">DOI</a>
+        </li>
+
+        <li>
+          de Aquino, G. S.; Martins, R. S.; Martins, M. F.; Ramos, R.<br />
+          <em>Statistical considerations on RANS simulations of inhomogeneous pipe flows.</em><br />
+          <strong>Journal of the Brazilian Society of Mechanical Sciences and Engineering</strong>, 2025.<br />
+          <a class="pub-link" href="https://doi.org/10.1007/s40430-024-05365-0" target="_blank" rel="noopener noreferrer">DOI</a>
+        </li>
+
+        <li>
+          Martins, R. S.; de Aquino, G. S. Coelho, É. P.; Gouveia, G. L. O.<br />
+          <em>
+            Realistic designs of windows and doors as solutions to improve natural ventilation
+            in hot-humid climates: a factorial design approach.
+          </em><br />
+          <strong>Architectural Engineering and Design Management</strong>, 2024.<br />
+          <a class="pub-link" href="https://doi.org/10.1080/17452007.2024.2374766" target="_blank" rel="noopener noreferrer">DOI</a>
+        </li>
+
+        <li>
+          Martins, R. S.; de Aquino, G. S.; Martins, M. F.; Ramos, R.<br />
+          <em>Sensitivity analysis for numerical simulations of disturbed flows aiming ultrasonic flow measurement.</em><br />
+          <strong>Measurement</strong>, 2021.<br />
+          <a class="pub-link" href="https://doi.org/10.1016/j.measurement.2021.110015" target="_blank" rel="noopener noreferrer">DOI</a>
+        </li>
+
+      </ol>
+
+      <h2 class="pub-section-title">Papers to Be Submitted or Under Consideration</h2>
+
+      <ol class="pub-list">
+
+        <li>
+          de Aquino, G. S.; de Lange, M. M.; Lefauve, A.; Duran-Matute, M.<br />
+          <em>The role of lateral confinement on the regime transitions of stratified exchange flows.</em><br />
+          Manuscript in preparation.
+        </li>
+        <li>
+          de Almeida, L. A.; de Aquino, G. S.; Villani, L. G. G.; Ramos, R.; Martins, R. S.<br />
+          <em>A CFD-ML approach to estimate the profile factor of ultrasonic flow meters under disturbed conditions.</em><br />
+          Manuscript in preparation.
+        </li>
+        <li>
+          de Aquino, G. S.; Viroulet, S.; Albagnac, J.<br />
+          <em>Statistical characteristics of the transport and dispersion of finite-size dilute particles by a vortex ring.</em><br />
+          Manuscript in preparation.
+        </li>
+
+      </ol>
+
+      <hr class="pub-divider" />
+
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="site-footer">
+
+  <div class="footer-divider"></div>
+
+  <div class="footer-text">
+    Guilherme Siqueira de Aquino © All rights reserved.
+  </div>
+
+<div class="footer-social-box">
+  <a class="social-link"
+     href="https://www.linkedin.com/in/guilherme-de-aquino"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+  </a>
+
+  <a class="social-link"
+     href="https://scholar.google.com/citations?user=KmjNehQAAAAJ&hl=en"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Google Scholar">
+    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+  </a>
+
+  <a class="social-link"
+     href="mailto:guilherme.siqueiradeaquino@imft.fr"
+     aria-label="Email">
+    <i class="fas fa-envelope" aria-hidden="true"></i>
+  </a>
+</div>
+
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.querySelector(".menu-toggle");
+    const links = document.querySelector(".links");
+
+    if (!btn || !links) return;
+
+    btn.addEventListener("click", () => {
+      const open = links.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      btn.textContent = open ? "✕" : "☰";
+    });
+  });
+</script>
+
+</body>
+</html>
