@@ -253,6 +253,7 @@ body{
   font-size: 18px;
   line-height: 1.6;
   color: #111;
+  text-align: justify;
 }
 
 /* =====================================================
@@ -277,6 +278,7 @@ body{
 }
 
 .bg-figure-icon{
+  display: block;
   height: 68%;
   width: auto;
   max-width: 100%;
@@ -317,6 +319,7 @@ body{
   margin: 0 0 18px;
   color: #111;
   max-width: 62ch;
+  text-align: justify;
 }
 
 .about-figure{
@@ -488,6 +491,10 @@ body{
   text-align: center;
 }
 
+.hero.hero-research .hero-text.hero-research-box p {
+  text-align: justify;
+}
+
 /* Research projects: reuse About layout with per-project spacing */
 .project {
   margin-top: 0.75rem;
@@ -552,6 +559,12 @@ body{
   max-width: none;
 }
 
+#project1 .project-body p,
+#project2 .project-body p,
+#project3 .project-body p{
+  text-align: justify;
+}
+
 #project1 .project-media{ height: 300px; }
 #project2 .project-media{ height: 360px; }
 #project3 .project-media{ height: 240px; }
@@ -603,9 +616,11 @@ section.about.project .about-inner.project-card > .project-text-wide p{
 }
 
 #project4 .about-text p{
-  font-size: 16px;   /* matches default used by .project-body p */
+  font-size: 14px;
   line-height: 1.7;
   margin: 0 0 18px;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .project-links{
@@ -682,9 +697,27 @@ section.about.project .about-inner.project-card > .project-text-wide p{
   }
 }
 
-@media (max-width: 900px){
+@media (max-width: 768px){
+  #project4 .about-text{
+    min-width: 0;
+  }
+
   .background-figures{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-top: 22px;
+  }
+
+  .bg-figure{
+    height: auto;
+    min-height: 0;
+    padding-block: 4px;
+  }
+
+  .bg-figure-icon{
+    width: 60vw;
+    max-width: 100%;
+    height: auto;
   }
 }
 
