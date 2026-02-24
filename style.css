@@ -564,6 +564,10 @@ body {
   word-break: normal;
 }
 
+#project4 .project-body {
+  text-align: justify;
+}
+
 .project-links {
   margin-top: 0.6rem;
   font-size: 0.9rem;
