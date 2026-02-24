@@ -506,11 +506,13 @@ body {
 
 /* Keep project titles visually consistent across cards (projects 1–4). */
 .about.project .project-card .project-body h2,
-#project4 .about-text h2 {
+#project4 .project-body h2 {
   margin: 0 0 0.83em;
   font-size: 1.5em;
   font-weight: 700;
   letter-spacing: normal;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
 }
 
 #project1 .project-body p,
@@ -537,21 +539,27 @@ body {
 }
 
 #project4 .project-media {
-  max-width: 450px;
-  height: 450px;
-  margin-left: auto;
+  aspect-ratio: auto;
+  max-width: none;
+  height: 100%;
+  margin: 0;
 }
 
 #project4 .project-media img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
-#project4 .about-text p {
+#project4 .project-card {
+  display: grid !important;
+  grid-template-columns: 1.5fr 0.9fr;
+  align-items: stretch;
+}
+
+#project4 .project-body p {
   margin: 0 0 18px;
-  font-size: 14px;
-  line-height: 1.7;
+  text-align: justify;
   overflow-wrap: anywhere;
   word-break: normal;
 }
@@ -910,14 +918,14 @@ body {
     background: transparent;
   }
 
-  #project4 .about-text {
-    min-width: 0;
+  #project4 .project-card {
+    display: flex !important;
+    flex-direction: column;
   }
 
-  #project4 .about-text h2 {
-    line-height: 1.25;
-    overflow-wrap: anywhere;
-    word-break: normal;
+  #project4 .project-media {
+    order: -1;
+    height: 260px;
   }
 
   .background-figures {
