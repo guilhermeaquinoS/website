@@ -1,262 +1,219 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page-home">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Guilherme de Aquino, fluid dynamics specialist in numerical simulation, experiments, and data-driven analysis." />
   <title>Guilherme de Aquino</title>
   <link rel="stylesheet" href="style.css" />
-    <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-/>
-  <style>
-    html { scroll-behavior: smooth; }
-  </style>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 </head>
-
-
-
 <body>
-<header class="topbar">
-  <nav class="nav container">
-    <a class="brand" href="./">
-      <span class="logo-dot"></span>
-      <span class="brand-text">
-        <strong>Guilherme</strong><br />
-        <small>de Aquino</small>
-      </span>
-    </a>
+  <!-- Header -->
+  <header class="topbar">
+    <nav class="nav container">
+      <a class="brand" href="./">
+        <span class="logo-dot"></span>
+        <span class="brand-text">
+          <strong>Guilherme</strong><br />
+          <small>de Aquino</small>
+        </span>
+      </a>
 
-    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-      ☰
-    </button>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
 
-    <div class="links">
-      <a href="./" class="link">HOME</a>
-      <a href="./#about" class="link">ABOUT</a>
-      <a href="research/" class="link">RESEARCH</a>
-      <a href="publications/" class="link">PUBLICATIONS</a>
-    </div>
-
-    <a class="contact" href="contact/">CONTACT</a>
-  </nav>
-</header>
-
-
-<section class="hero">
-  <div class="hero-inner container">
-    
-    <div class="hero-text">
-      <h1>
-        Fluid Dynamics Specialist
-      </h1>
-    
-    <p>
-    Connecting fundamental research to real world problems<br>
-    Numerical Simulation. Experimental Analysis. Data Science.<br>
-    
-    </p> 
-
-      <div class="hero-buttons">
-        <a href="./#about" class="btn primary">About</a>
-        <a href="contact/" class="btn outline">Contact</a>
+      <div class="links">
+        <a href="./" class="link">HOME</a>
+        <a href="./#about" class="link">ABOUT</a>
+        <a href="research/" class="link">RESEARCH</a>
+        <a href="publications/" class="link">PUBLICATIONS</a>
       </div>
-    </div>
 
-    <div class="hero-visuals">
-        <div class="hero-animation"
+      <a class="contact" href="contact/">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <h1>Fluid Dynamics Specialist</h1>
+
+          <p>
+            Connecting fundamental research to real world problems<br />
+            Numerical Simulation. Experimental Analysis. Data Science.<br />
+          </p>
+
+          <div class="hero-buttons">
+            <a href="./#about" class="btn primary">About</a>
+            <a href="contact/" class="btn outline">Contact</a>
+          </div>
+        </div>
+
+        <div class="hero-visuals">
+          <div
+            class="hero-animation"
             data-frames="120"
             data-start="140"
             data-speed="2"
             data-path="figures/home_animation/cropped_"
-            data-ext=".png">
-        <img id="heroFrame" src="figures/home_animation/cropped_100.png" alt="Animated scientific figure" />
+            data-ext=".png"
+          >
+            <img id="heroFrame" src="figures/home_animation/cropped_100.png" alt="Animated scientific figure" />
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <div class="services-inner container">
+        <h2>My expertise</h2>
+
+        <div class="services-content">
+          <p>
+            I apply advanced computational fluid dynamics to investigate complex flow phenomena,
+            covering the full workflow from physical modeling and numerical setup to large-scale simulation campaigns
+            and in-depth post-processing. My work combines commercial and open-source solvers, including Basilisk and OpenFOAM,
+            with automated pipelines designed for high-throughput and parametric studies.
+          </p>
+
+          <p>
+            In parallel, I conduct experimental investigations to uncover the physical mechanisms governing fluid flows
+            and to rigorously validate numerical results. I leverage statistical analysis and data-driven methods
+            to quantify uncertainty, identify dominant trends, and extract robust insights from large datasets.
+          </p>
+        </div>
+
+        <div class="background-figures">
+          <div class="bg-figure">
+            <img src="figures/icon_CFD.png" alt="CFD icon" class="bg-figure-icon" width="512" height="512" loading="lazy" decoding="async" />
+          </div>
+          <div class="bg-figure">
+            <img src="figures/exp_icon.png" alt="Experimental icon" class="bg-figure-icon" width="512" height="512" loading="lazy" decoding="async" />
+          </div>
+          <div class="bg-figure">
+            <img src="figures/data_icon.png" alt="Data icon" class="bg-figure-icon" width="512" height="512" loading="lazy" decoding="async" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="about-inner container">
+        <div class="about-text">
+          <h2>About</h2>
+
+          <p>
+            Hello — I'm Guilherme, a mechanical engineer with a strong background in fluid dynamics. I enjoy combining experiments, numerical simulations, and statistical analysis to better understand complex flows. Throughout my career, I have tackled various challenges, ranging from turbulent pipe flows to vortex-particle interactions and transitional stratified flows.
+          </p>
+
+          <p>
+            In addition to my fascination with the physical aspects of flow phenomena, I am passionate about applying this knowledge to practical problems. For instance, I have contributed to advancements in ultrasonic flow measurement, effectively bridging computational fluid dynamics with real-world applications.
+          </p>
+
+          <p>
+            I am currently completing my PhD at the Institut de Mécanique des Fluides de Toulouse and am eager to contribute to new scientific and engineering challenges where I can apply my expertise in fluid dynamics, simulation, and data analysis to generate meaningful impact.
+          </p>
+
+          <a href="files/CV_Guilherme_deAquino.pdf" class="cv-link" target="_blank" rel="noopener">
+            View my full CV here
+          </a>
+        </div>
+
+        <figure class="about-figure">
+          <img src="figures/personal_pic.jpg" alt="Portrait of Guilherme de Aquino" />
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-divider"></div>
+
+    <div class="footer-text">
+      Guilherme Siqueira de Aquino © All rights reserved.
     </div>
 
-  </div>
-</section>
-
-<section class="services">
-  <div class="services-inner container">
-
-    <h2>My expertise</h2>
-
-  <div class="services-content">
-    <p>
-        I apply advanced computational fluid dynamics to investigate complex flow phenomena, 
-        covering the full workflow from physical modeling and numerical setup to large-scale simulation campaigns 
-        and in-depth post-processing. My work combines commercial and open-source solvers, including Basilisk and OpenFOAM, 
-        with automated pipelines designed for high-throughput and parametric studies.
-    </p>
-
-    <p>
-        In parallel, I conduct experimental investigations to uncover the physical mechanisms governing fluid flows 
-        and to rigorously validate numerical results. I leverage statistical analysis and data-driven methods 
-        to quantify uncertainty, identify dominant trends, and extract robust insights from large datasets.
-    </p>
-</div>
-
-    <div class="background-figures">
-        <div class="bg-figure">
-          <img src="figures/icon_CFD.png" alt="CFD icon" class="bg-figure-icon" width="512" height="512" loading="lazy" decoding="async" />
-        </div>
-        <div class="bg-figure">
-          <img src="figures/exp_icon.png" alt="Experimental icon" class="bg-figure-icon" width="512" height="512" loading="lazy" decoding="async" />
-        </div>
-        <div class="bg-figure">
-          <img src="figures/data_icon.png" alt="Data icon" class="bg-figure-icon" width="512" height="512" loading="lazy" decoding="async" />
-        </div>
-    </div>
-
-  </div>
-</section>
-
-<section id="about" class="about">
-  <div class="about-inner container">
-    <div class="about-text">
-      <h2>About</h2> 
-
-      <p>
-        Hello — I'm Guilherme, a mechanical engineer with a strong background in fluid dynamics. I enjoy combining experiments, numerical simulations, and statistical analysis to better understand complex flows. Throughout my career, I have tackled various challenges, ranging from turbulent pipe flows to vortex-particle interactions and transitional stratified flows.      </p>
-
-      <p>
-        In addition to my fascination with the physical aspects of flow phenomena, I am passionate about applying this knowledge to practical problems. For instance, I have contributed to advancements in ultrasonic flow measurement, effectively bridging computational fluid dynamics with real-world applications.      </p>
-
-      <p>
-        I am currently completing my PhD at the Institut de Mécanique des Fluides de Toulouse and am eager to contribute to new scientific and engineering challenges where I can apply my expertise in fluid dynamics, simulation, and data analysis to generate meaningful impact.
-      </p>
-      <a href="files/CV_Guilherme_deAquino.pdf"
-        class="cv-link"
-        target="_blank"
-        rel="noopener">
-        View my full CV here
+    <div class="footer-social-box">
+      <a class="social-link" href="https://www.linkedin.com/in/guilherme-de-aquino" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
       </a>
 
-  
+      <a class="social-link" href="https://scholar.google.com/citations?user=KmjNehQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+      </a>
+
+      <a class="social-link" href="mailto:guilherme.siqueiradeaquino@imft.fr" aria-label="Email">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+      </a>
     </div>
+  </footer>
 
-    <figure class="about-figure">
-      <img
-        src="figures/personal_pic.jpg"
-        alt="Portrait of Guilherme de Aquino"
-        style="width: 100%; height: 100%; object-fit: cover;"
-      />
-    </figure>
-  </div>
-</section>
+  <script>
+    (() => {
+      const wrapper = document.querySelector('.hero-animation');
+      const img = document.getElementById('heroFrame');
+      if (!wrapper || !img) return;
 
+      const frameCount = Number(wrapper.dataset.frames || 60);
+      const startFrame = Number(wrapper.dataset.start || 1);
+      const basePath = wrapper.dataset.path || 'figures/home_animation/cropped_';
+      const ext = wrapper.dataset.ext || '.png';
+      const pad = Number(wrapper.dataset.pad || 3);
 
-<footer class="site-footer">
+      const frameSrc = (n) => `${basePath}${String(n).padStart(pad, '0')}${ext}`;
 
-  <div class="footer-divider"></div>
+      for (let i = 0; i < frameCount; i++) {
+        const preloadedImage = new Image();
+        preloadedImage.src = frameSrc(startFrame + i);
+        if (preloadedImage.decode) preloadedImage.decode().catch(() => {});
+      }
 
-  <div class="footer-text">
-    Guilherme Siqueira de Aquino © All rights reserved.
-  </div>
+      let lastFrame = -1;
+      let isTicking = false;
 
-<div class="footer-social-box">
-  <a class="social-link"
-     href="https://www.linkedin.com/in/guilherme-de-aquino"
-     target="_blank"
-     rel="noopener noreferrer"
-     aria-label="LinkedIn">
-    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-  </a>
+      function updateFrame() {
+        isTicking = false;
 
-  <a class="social-link"
-     href="https://scholar.google.com/citations?user=KmjNehQAAAAJ&hl=en"
-     target="_blank"
-     rel="noopener noreferrer"
-     aria-label="Google Scholar">
-    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-  </a>
+        const doc = document.documentElement;
+        const scrollTop = window.scrollY || doc.scrollTop || 0;
+        const maxScroll = doc.scrollHeight - window.innerHeight || 1;
 
-  <a class="social-link"
-     href="mailto:guilherme.siqueiradeaquino@imft.fr"
-     aria-label="Email">
-    <i class="fas fa-envelope" aria-hidden="true"></i>
-  </a>
-</div>
+        const baseSpeed = Number(wrapper.dataset.speed || 1);
+        const mobileBoost = window.matchMedia('(max-width: 768px)').matches ? 1.4 : 1;
+        const speed = baseSpeed * mobileBoost;
 
-</footer>
+        const progress = Math.min(1, Math.max(0, (scrollTop / maxScroll) * speed));
+        const frameIndex = Math.min(frameCount - 1, Math.max(0, Math.floor(progress * (frameCount - 1))));
+        const frameNumber = startFrame + frameIndex;
 
+        if (frameNumber !== lastFrame) {
+          img.src = frameSrc(frameNumber);
+          lastFrame = frameNumber;
+        }
+      }
 
-<script>
-(() => {
-  const wrapper = document.querySelector('.hero-animation');
-  const img = document.getElementById('heroFrame');
-  if (!wrapper || !img) return;
+      const onScroll = () => {
+        if (!isTicking) {
+          isTicking = true;
+          requestAnimationFrame(updateFrame);
+        }
+      };
 
-  const frameCount = Number(wrapper.dataset.frames || 60);
-  const startFrame = Number(wrapper.dataset.start || 1);
-  const basePath = wrapper.dataset.path || 'figures/home_animation/cropped_';
-  const ext = wrapper.dataset.ext || '.png';
-  const pad = Number(wrapper.dataset.pad || 3); // 3 => 001
-
-  const frameSrc = (n) => `${basePath}${String(n).padStart(pad, '0')}${ext}`;
-
-  // preload
-  for (let i = 0; i < frameCount; i++) {
-    const im = new Image();
-    im.src = frameSrc(startFrame + i);
-    // best-effort decode for smoother swaps
-    if (im.decode) im.decode().catch(() => {});
-  }
-
-  let last = -1, ticking = false;
-
-  function update() {
-    ticking = false;
-
-    const doc = document.documentElement;
-    const scrollTop = window.scrollY || doc.scrollTop || 0;
-    const maxScroll = (doc.scrollHeight - window.innerHeight) || 1;
-
-    // Speed multiplier: 2 = 2x faster (reaches last frame with less scroll)
-    const baseSpeed = Number(wrapper.dataset.speed || 1);
-    const mobileBoost = window.matchMedia('(max-width: 768px)').matches ? 1.4 : 1;
-    const speed = baseSpeed * mobileBoost;
-
-    // Entire page progress: 0..1
-    const progress = Math.min(1, Math.max(0, (scrollTop / maxScroll) * speed));
-
-    const idx = Math.min(frameCount - 1, Math.max(0, Math.floor(progress * (frameCount - 1))));
-    const frameNum = startFrame + idx;
-
-    if (frameNum !== last) {
-      img.src = frameSrc(frameNum);
-      last = frameNum;
-    }
-  }
-
-  const onScroll = () => {
-    if (!ticking) {
-      ticking = true;
-      requestAnimationFrame(update);
-    }
-  };
-
-  update();
-  window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', onScroll);
-})();
-</script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const btn = document.querySelector(".menu-toggle");
-    const links = document.querySelector(".links");
-
-    if (!btn || !links) return;
-
-    btn.addEventListener("click", () => {
-      const open = links.classList.toggle("is-open");
-      btn.setAttribute("aria-expanded", open ? "true" : "false");
-      btn.textContent = open ? "✕" : "☰";
-    });
-  });
-</script>
-
+      updateFrame();
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+    })();
+  </script>
+  <script src="site.js"></script>
 </body>
 </html>
