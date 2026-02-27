@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Guilherme de Aquino — Fluid dynamics researcher." />
   <title>Guilherme de Aquino</title>
-  <link rel="preload" as="image" href="figures/home_animation/cropped_140.png" fetchpriority="high" />
   <link rel="stylesheet" href="style_dark.css" />
   <link
     rel="stylesheet"
@@ -70,11 +69,6 @@
               id="heroFrame"
               src="figures/home_animation/cropped_140.png"
               alt="Animated scientific figure"
-              width="1500"
-              height="1500"
-              loading="eager"
-              decoding="async"
-              fetchpriority="high"
             />
           </div>
         </div>
@@ -201,12 +195,10 @@
 
       const frameSrc = (n) => `${basePath}${String(n).padStart(pad, '0')}${ext}`;
 
-      function preloadFrames(start, count) {
-        for (let i = 0; i < count; i++) {
-          const preloadedImage = new Image();
-          preloadedImage.src = frameSrc(start + i);
-          if (preloadedImage.decode) preloadedImage.decode().catch(() => {});
-        }
+      for (let i = 0; i < frameCount; i++) {
+        const preloadedImage = new Image();
+        preloadedImage.src = frameSrc(startFrame + i);
+        if (preloadedImage.decode) preloadedImage.decode().catch(() => {});
       }
 
       let lastFrame = -1;
@@ -244,15 +236,6 @@
       window.addEventListener('scroll', onScroll, { passive: true });
       window.addEventListener('resize', onScroll);
 
-      const preloadCount = Math.min(frameCount, Number(wrapper.dataset.preload || 12));
-      const schedulePreload = () => {
-        if ('requestIdleCallback' in window) {
-          window.requestIdleCallback(() => preloadFrames(startFrame, preloadCount), { timeout: 1200 });
-          return;
-        }
-        window.setTimeout(() => preloadFrames(startFrame, preloadCount), 800);
-      };
-      window.addEventListener('load', schedulePreload, { once: true });
     })();
   </script>
   <script src="site.js"></script>
