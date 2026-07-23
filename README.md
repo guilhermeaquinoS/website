@@ -14,6 +14,10 @@ This website is implemented as a **static website** using standard web technolog
 - CSS  
 - Minimal JavaScript (for layout, navigation, and small interactions)
 
+The source code for this site is maintained in the GitHub repository:
+
+- https://github.com/guilhermeaquinoS/gdeaquino.github.io
+
 The website is hosted using **GitHub Pages**.
 
 ---
